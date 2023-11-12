@@ -1,0 +1,17 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0;
+  flex-direction: column;
+  gap: $space_sm;
+
+  .social__icon {
+    display: flex;
+    align-items: center;
+    gap: $space_sm;
+    a {
+      text-decoration: none;
+    }
+  }
+}

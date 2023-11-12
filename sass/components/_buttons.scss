@@ -1,0 +1,10 @@
+.btn {
+  border: none;
+  outline: none;
+  background-color: $main_color;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+	border-radius: $rounded;
+}

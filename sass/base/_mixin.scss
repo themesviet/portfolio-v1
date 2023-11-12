@@ -1,0 +1,29 @@
+@mixin screen_size($breakpoint) {
+	@if map-has-key($breakpoints, $breakpoint) {
+		@media (max-width: #{map-get($breakpoints, $breakpoint)}) {
+			@content;
+		}
+	}
+}
+
+@mixin make-container($padding-x: 12px) {
+  // width: 100%;
+  padding-right: $padding-x;
+  padding-left: $padding-x;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: map-get($container-max-widths, xl);
+
+  @include screen_size(xl) {
+    max-width: map-get($container-max-widths, lg);
+  }
+  @include screen_size(lg) {
+    max-width: map-get($container-max-widths, md);
+  }
+  @include screen_size(md) {
+    max-width: map-get($container-max-widths, sm);
+  }
+  @include screen_size(sm) {
+    // max-width: map-get($container-max-widths, sm);
+  }
+}

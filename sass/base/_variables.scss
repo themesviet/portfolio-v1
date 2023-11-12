@@ -1,0 +1,29 @@
+// Color
+$main_color: #ff6464;
+$bg_color: #edf7fa;
+$primary_color: #142850;
+
+// Space
+
+$space_sm: 1rem;
+
+// container
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px,
+);
+
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);
+
+$title_size: clamp(1.5rem, 2.5vw, 2rem);
+
+$rounded: 10px;
+$shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
